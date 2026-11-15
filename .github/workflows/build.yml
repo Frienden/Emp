@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v4
-      - name: Unpack source
-        run: base64 -d resource-vision-source.b64 | tar -xJf -
       - name: Java 17
         uses: actions/setup-java@v4
         with:
